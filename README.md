@@ -11,6 +11,7 @@ Remember to call Alicia Keys tonight
 ### Bachelor of Arts in Communications
 ### University of Arkansas
 
+
 ### EDUCATION
 
 Bachelor of Arts	Communications, Minor in Psychology, University of Arkansas, December 2014
@@ -31,7 +32,7 @@ CNA Certification	Certified Nursing Assistant, First Aid and CPR, State of Arkan
 
 Jones, J., **Ramser, H.**, Woessner, A., et al. (2018) In vivo multiphoton microscopy detects longitudinal changes associated with delayed skin wound healing. Nature Communications Biology. 1(198).
 
-Abstracts and Conferences
+**Abstracts and Conferences**
 
 Jones J.D., Majid F., **Ramser H.**, Quinn K.P.  Non-invasive in vivo quantification of skin wound metabolism using label-free multiphoton microscopy.  Innovations in Wound Healing Meeting. Key Largo, FL, December 2016.
 
@@ -60,27 +61,25 @@ Jones J.D., **Ramser H.E.**, Woessner A., Quinn K.P. In Vivo, Label-Free Multiph
 
 **Research Experience**
 
-2017-present	Graduate research lab assistant, [Dr. Kyle Quinn, Assistant Professor], University of Arkansas, Fayetteville, AR
-
-2016 – 2017	Post-baccalaureate research lab assistant, [Dr. Kyle Quinn, Assistant Professor], University of Arkansas, Fayetteville, AR
+Graduate research lab assistant, [Dr. Kyle Quinn, Assistant Professor], University of Arkansas, Fayetteville, AR            _2017-present_	
+Post-baccalaureate research lab assistant, [Dr. Kyle Quinn, Assistant Professor], University of Arkansas, Fayetteville, AR   _2016 – 2017_	
 
 **Teaching Experience**
 
-2015 – 2018	Personal tutor, [Algebra, Geometry, Chemistry], Fayetteville, AR
+Personal tutor, [Algebra, Geometry, Chemistry], Fayetteville, AR                                                             _2015 – 2018_	
+Personal tutor, Elementary Mathematics, English, and Reading, Washington Elementary School, Fayetteville, AR                 _2012 – 2014_
 
-2012 – 2014	Personal tutor, Elementary Mathematics, English, and Reading, Washington Elementary School, Fayetteville, AR
+Personal tutor, Middle School and High School Science and Mathematics, Potter’s House	, Fayetteville, AR                     _2012 – 2014_
 
-2012 – 2014	Personal tutor, Middle School and High School Science and Mathematics, Potter’s House	, Fayetteville, AR
+Private tutor, college-level Finite Mathematics, Survey of Calculus, and Introduction to Philosophy, Fayetteville, AR        _2011 – 2012_
 
-2011 – 2012	Private tutor, college-level Finite Mathematics, Survey of Calculus, and Introduction to Philosophy, Fayetteville, AR
-
-Summer 2011	Teaching assistant, Arkansas River Valley Montessori, Little Rock, AR
+Teaching assistant, Arkansas River Valley Montessori, Little Rock, AR                                                        _Summer 2011_
 
 **Other Professional Experience**
 
-2014 – 2015	CNA caretaker, Good Shepherd Senior Care, Fayetteville, AR
+CNA caretaker, Good Shepherd Senior Care, Fayetteville, AR                                                                   _2014 – 2015_
 
-2014 – 2015	Interim CEO for sales administration, vendor and sourcing relations, and marketing, Judith and James, Little Rock, AR
+Interim CEO for sales administration, vendor and sourcing relations, and marketing, Judith and James, Little Rock, AR        _2014 – 2015_
 
 
 ### LEADERSHIP & AWARDS
