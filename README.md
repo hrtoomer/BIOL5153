@@ -85,7 +85,7 @@ Summer 2011	Teaching assistant, Arkansas River Valley Montessori, Little Rock, A
 
 ### LEADERSHIP & AWARDS
 
-2019 – Present	Tau Beta Pi Engineering Honors Society, Initiate	
-2019 - Present	Biomedical Engineering Departmental Student Organization, Representative
-2018 - Present	Graduate Professional Student Congress, Research Council Team, Representative
-2014	Lambda Pi Eta (LPH) Honor Society Member, Alpha Chapter, National Communication Association
+* 2019 – Present	Tau Beta Pi Engineering Honors Society, Initiate	
+* 2019 - Present	Biomedical Engineering Departmental Student Organization, Representative
+* 2018 - Present	Graduate Professional Student Congress, Research Council Team, Representative
+* 2014	Lambda Pi Eta (LPH) Honor Society Member, Alpha Chapter, National Communication Association
