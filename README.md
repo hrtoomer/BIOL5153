@@ -7,6 +7,7 @@ Remember to call Alicia Keys tonight
 
 
 ## Hallie Ramser Toomer
+
 ### Bachelor of Arts in Communications
 ### University of Arkansas
 
@@ -20,8 +21,9 @@ CNA Certification	Certified Nursing Assistant, First Aid and CPR, State of Arkan
 
 ### RESEARCH INTERESTS
 
-Medical Imaging 	Multiphoton microscopy; fluorescence lifetime imaging; ultrasound; magnetic resonance; x-ray computed tomography; positron emission tomography
-Biology 	Wound healing; pressure ulcers; chronic wounds; cancer biology
+**Medical Imaging** 	Multiphoton microscopy; fluorescence lifetime imaging; ultrasound; magnetic resonance; x-ray computed tomography; positron emission tomography
+
+**Biology** 	Wound healing; pressure ulcers; chronic wounds; cancer biology
 
 ### AFFILIATED RESEARCH 
 
