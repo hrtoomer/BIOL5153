@@ -61,25 +61,25 @@ Jones J.D., **Ramser H.E.**, Woessner A., Quinn K.P. In Vivo, Label-Free Multiph
 
 **Research Experience**
 
-Graduate research lab assistant, [Dr. Kyle Quinn, Assistant Professor], University of Arkansas, Fayetteville, AR            _2017-present_	
-Post-baccalaureate research lab assistant, [Dr. Kyle Quinn, Assistant Professor], University of Arkansas, Fayetteville, AR   _2016 – 2017_	
+* Graduate research lab assistant, [Dr. Kyle Quinn, Assistant Professor], University of Arkansas, Fayetteville, AR         _2017-present_	
+* Post-baccalaureate research lab assistant, [Dr. Kyle Quinn, Assistant Professor], University of Arkansas, Fayetteville, AR _2016 – 2017_	
 
 **Teaching Experience**
 
-Personal tutor, [Algebra, Geometry, Chemistry], Fayetteville, AR                                                             _2015 – 2018_	
-Personal tutor, Elementary Mathematics, English, and Reading, Washington Elementary School, Fayetteville, AR                 _2012 – 2014_
+* Personal tutor, [Algebra, Geometry, Chemistry], Fayetteville, AR                                                           _2015 – 2018_	
+* Personal tutor, Elementary Mathematics, English, and Reading, Washington Elementary School, Fayetteville, AR               _2012 – 2014_
 
-Personal tutor, Middle School and High School Science and Mathematics, Potter’s House	, Fayetteville, AR                     _2012 – 2014_
+* Personal tutor, Middle School and High School Science and Mathematics, Potter’s House	, Fayetteville, AR                   _2012 – 2014_
 
-Private tutor, college-level Finite Mathematics, Survey of Calculus, and Introduction to Philosophy, Fayetteville, AR        _2011 – 2012_
+* Private tutor, college-level Finite Mathematics, Survey of Calculus, and Introduction to Philosophy, Fayetteville, AR      _2011 – 2012_
 
-Teaching assistant, Arkansas River Valley Montessori, Little Rock, AR                                                        _Summer 2011_
+* Teaching assistant, Arkansas River Valley Montessori, Little Rock, AR                                                      _Summer 2011_
 
 **Other Professional Experience**
 
-CNA caretaker, Good Shepherd Senior Care, Fayetteville, AR                                                                   _2014 – 2015_
+* CNA caretaker, Good Shepherd Senior Care, Fayetteville, AR                                                                 _2014 – 2015_
 
-Interim CEO for sales administration, vendor and sourcing relations, and marketing, Judith and James, Little Rock, AR        _2014 – 2015_
+*Interim CEO for sales administration, vendor and sourcing relations, and marketing, Judith and James, Little Rock, AR       _2014 – 2015_
 
 
 ### LEADERSHIP & AWARDS
