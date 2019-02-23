@@ -1,9 +1,3 @@
-bleh
-Project started 2016-02-14
-Project started 2019-02-14
-Remember to call Alicia Keys tonight
-# hjhjh
-## gfdf
 
 
 ## Hallie Ramser Toomer
@@ -61,8 +55,10 @@ Jones J.D., **Ramser H.E.**, Woessner A., Quinn K.P. In Vivo, Label-Free Multiph
 
 **Research Experience**
 
-* Graduate research lab assistant, [Dr. Kyle Quinn, Assistant Professor], University of Arkansas, Fayetteville, AR         _2017-present_	
-* Post-baccalaureate research lab assistant, [Dr. Kyle Quinn, Assistant Professor], University of Arkansas, Fayetteville, AR _2016 – 2017_	
+* Graduate research lab assistant, [Dr. Kyle Quinn, Assistant Professor], University of Arkansas, Fayetteville, AR         
+_2017-present_	
+* Post-baccalaureate research lab assistant, [Dr. Kyle Quinn, Assistant Professor], University of Arkansas, Fayetteville, AR 
+_2016 – 2017_	
 
 **Teaching Experience**
 
