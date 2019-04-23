@@ -8,7 +8,7 @@
 ### assn02 - emailed and completed
 ### assn03 - emailed and completed [on GitHub, my CV]
 ### assn04 - emailed and completed [using BLAST on Trestles]
-### assn05 - completed, needs to be revised [on GitHub] - parseGFF.py
+### assn05 - completed, was revised and cleaned up [on GitHub] - parseGFF.py , but clean_assn05 is best
 ### assn06 - does this exist?
 ### assn07 - started, needs to be completed [on GitHub] - parseGFF.py
 #
