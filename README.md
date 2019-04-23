@@ -11,6 +11,7 @@
 #### assn05 - completed, was revised and cleaned up [on GitHub] - parseGFF.py , but clean_assn05 is best
 #### assn06 - does this exist?
 #### assn07 - Completed [on GitHub] - 4_22parseGFF.py
+#### assn08 - completed [on GitHub] - using the_concert.txt
 #
 ### Python4Biologists Exercises
 #### Chapter 1 - Completed [on GitHub]
