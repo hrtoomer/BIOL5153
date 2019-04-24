@@ -1,3 +1,4 @@
+# this is the cumulative parseGFF.py with all changes
 
 # to call this script, the gff and fasta file should be input
 # the files this was based on:
