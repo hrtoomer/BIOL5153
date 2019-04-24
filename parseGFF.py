@@ -1,15 +1,19 @@
 
+# to call this script, the gff and fasta file should be input
+# the files this was based on:
+# fasta_file='watermelon.fsa'
+# gff_file ='watermelon.gff'
+
+
+# Import SeqIO for the win
 from Bio import SeqIO
 import argparse
-
-fasta_file='watermelon.fsa'
-gff_file ='watermelon.gff'
 
  def get_args():
 	# create an argument parser object
 	parser = argparse.ArgumentParser(description = 'This script returns the input fasta and gff files')
 
-	# add positional argument for the input position in the Fibonacci sequence
+	# add positional argument for the input position
 	parser.add_argument(fasta_file, help="The FASTA file you want to input", type=str)
 	parser.add_argument(gff_file, help="The GFF file you want to input", type=str)
 
