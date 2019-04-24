@@ -9,7 +9,7 @@
 #### assn03 - emailed and completed [on GitHub, my CV]
 #### assn04 - emailed and completed [using BLAST on Trestles]
 #### assn05 - Completed and revised [on GitHub] - clean_assn05 or parseGFF.py
-#### assn07 - Completed [on GitHub] - 4_22parseGFF.py or parseGFF.py
+#### assn07 - Completed [on GitHub] - assn07 or parseGFF.py
 #### assn08 - Completed [on GitHub] - [regular expression]
 #
 ### Python4Biologists Exercises
