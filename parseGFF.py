@@ -7,7 +7,7 @@ gff_file ='watermelon.gff'
 
  def get_args():
 	# create an argument parser object
-	parser = argparse.ArgumentParser(description = 'This script returns the Fibonacci number at a specified position in the Fibonacci sequence')
+	parser = argparse.ArgumentParser(description = 'This script returns the input fasta and gff files')
 
 	# add positional argument for the input position in the Fibonacci sequence
 	parser.add_argument(fasta_file, help="The FASTA file you want to input", type=str)
