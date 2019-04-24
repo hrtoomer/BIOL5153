@@ -49,9 +49,9 @@ def calculation(gff, genome):
             gff.close()
 
             # reverse complement for each '-' strand
-            strand=(str(fields[7]))
-            revcomp=exon.reverse_complement() if strand == "-"
-            print(revcomp)
+            strand=(str(fields[6]))
+	    if strand=='-':
+            	print(exon.reverse_complement())
 
 def main():
         fasta=read_fasta(fasta_file)
