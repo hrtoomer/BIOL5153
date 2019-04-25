@@ -73,6 +73,35 @@ def rev_comp(args, genome):
             print(exon.reverse_complement())
         return rev	
 
+def CDS_intron(args, genome):
+    gff=open(args.gff_file)
+    gc_content=[]
+    for line in gff:
+        line = line.rstrip('\n')
+        fields = line.split('\t') #list the categories of the gff file by the splitting where the tab character is
+        start = int(fields[3]) # start
+        end = int(fields[4]) # stop
+        exon = genome.seq[start -1:end -1]  #create an individual substring, start from 0 position
+        feature = str(fields[2])
+        if(feature == 'CDS'):
+            # split the attributes field into its separate parts, to get the gene info
+            exon_info = attributes.split(':')
+
+            print(exon_info)
+
+            # extract the gene_name
+            gene_name = fields[0].split()[1]
+
+            # test whether there is or isn't an entry in index 2, which holds the value 'exon'
+            # for genes that have introns. If there is no value to index 2, then the gene doesn't
+            # have an intron, and we can just print it
+            if len(fields[0].split()[2]) > 2:
+                print('This gene has an intron')
+            else:
+                print('>' + line[0].replace('_', '_') + '_' + gene_name)
+                print(feature_sequence)  
+
+
 def main():
 # get arguments before calling main
 	args = get_args()
