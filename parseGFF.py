@@ -17,53 +17,69 @@ import argparse
 	# add positional argument for the input position
 	parser.add_argument(fasta_file, help="The FASTA file you want to input", type=str)
 	parser.add_argument(gff_file, help="The GFF file you want to input", type=str)
+	
+	# add optional arguments
+    	group = parser.add_mutually_exclusive_group()
+    	group.add_argument("-v", "--verbose", action="store_true", help="print verbose output")
+    	group.add_argument("-s", "--simple", action="store_true", help="print simple output (default)")
 
 	# parse the arguments
 	return parser.parse_args()
 
-def read_fasta(fasta_file):
+def read_fasta(args):
         # read in the FASTA file
-        genome = SeqIO.read(arg.fasta_file, 'fasta') # genome.seq is the pure genome sequence
-
-        # print (genome.seq)
+        genome = SeqIO.read(args.fasta_file, 'fasta') # genome.seq is the pure genome sequence
         return(genome)
 
-def read_gff(gff_file):
-        gff=open(arg.gff_file)
+def read_gff(args):
+        gff=open(args.gff_file)
         return(gff)
 
-def calculation(gff, genome):
-        for line in gff:
+# split up the calculations into separate functions
+def gc_calc(gff, genome):
+	gff=open(args.gff_file)
+	gc_content=[]
+	for line in gff:
             line = line.rstrip('\n')
             fields = line.split('\t') #list the categories of the gff file by the splitting where the tab character is
 
             start = int(fields[3]) # start
             end = int(fields[4]) # stop
-            exon=genome.seq[start:end] #create an individual substring
+            exon=genome.seq[start -1:end -1] #create an individual substring, start from 0
 
             # calculate GC content from substring
             lengthexon=len(exon)
             g_count=exon.count('G')
             c_count=exon.count('C')
             gc_content = g_count + c_count / lengthexon # calculate GC content for each substring
-            return("GC content is " + str(gc_content))
-            gff.close()
+            
+	return gc_content
+ 
+def rev_comp(args, genome):
+    gff=open(args.gff_file)
+    rev=[]
+    for line in gff:
+        line = line.rstrip('\n')
+        fields = line.split('\t') #list the categories of the gff file by the splitting where the tab character is
 
-            # reverse complement for each '-' strand
-            strand=(str(fields[6]))
-            if strand == "-":
-                   print((exon.reverse_complement()))
-            # revcomp=exon.reverse_complement() if strand == "-"
-            # print(revcomp)
+        start = int(fields[3]) # start
+        end = int(fields[4]) # stop
+        exon=genome.seq[start -1:end -1] #create an individual substring
+        
+	# reverse complement for each '-' strand
+        strand=(str(fields[6]))
+        if strand == "-"
+            rev = exon.reverse_complement()
+            print(exon.reverse_complement())
+        return rev	
 
 def main():
-        fasta=read_fasta(fasta_file)
-        gff=read_gff(gff_file)
-        calculation()
-
-
 # get arguments before calling main
-args = get_args()
+	args = get_args()
+	genome = read_fasta(args)
+	gff,exon = read_gff(args, genome)
+	gc_content = gc_calc(args, genome)
+	rev=rev_comp(args, genome)
 
 # execute by calling main
 if __name__=="__main__":
