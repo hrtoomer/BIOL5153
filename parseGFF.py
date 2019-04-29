@@ -29,55 +29,37 @@ from collections import defaultdict
 	# parse the arguments
 	return parser.parse_args()
 
-def read_fasta(args):
+def read_fasta():
         # read in the FASTA file
         genome = SeqIO.read(args.fasta_file, 'fasta') # genome.seq is the pure genome sequence
-        return(genome)
+        return genome.seq 
 
-def read_gff(args):
-        gff=open(args.gff_file)
-        return(gff)
+def read_gff(args, genome):
+        # this is an extra function in case something needs to be changed in the future
+	# (open & parse gff) read in every field of the gff file
+    with open(args.gff_file, 'r') as gff:
+        reader = csv.reader(gff, delimiter ='\t')
+        for line in reader:
+            if not line:
+                continue
+            else:
+                    seqname=line[0]
+                    source=line[1]
+                    feature=line[2]
+                    start=int(line[3])
+                    end=int(line[4])
+                    score=line[5]
+                    strand=line[6]
+                    frame=line[7]
+                    attribute=line[8]
+    return(seqname, source, feature, start, end, score, strand, frame, attribute)
 
-# split up the calculations into separate functions
-def gc_calc(gff, genome):
-	gff=open(args.gff_file)
-	gc_content=[]
-	for line in gff:
-            line = line.rstrip('\n')
-            fields = line.split('\t') #list the categories of the gff file by the splitting where the tab character is
-
-            start = int(fields[3]) # start
-            end = int(fields[4]) # stop
-            exon=genome.seq[start -1:end -1] #create an individual substring, start from 0
-
-            # calculate GC content from substring
-            lengthexon=len(exon)
-            g_count=exon.count('G')
-            c_count=exon.count('C')
-            gc_content = g_count + c_count / lengthexon # calculate GC content for each substring
-            
-	return gc_content
- 
-def rev_comp(args, genome):
-    gff=open(args.gff_file)
-    rev=[]
-    for line in gff:
-        line = line.rstrip('\n')
-        fields = line.split('\t') #list the categories of the gff file by the splitting where the tab character is
-
-        start = int(fields[3]) # start
-        end = int(fields[4]) # stop
-        exon=genome.seq[start -1:end -1] #create an individual substring
-        
-	# reverse complement for each '-' strand
-        strand=(str(fields[6]))
-        if strand == "-"
-            rev = exon.reverse_complement()
-            print(exon.reverse_complement())
-        return rev	
-
-def parse_gff(args, genome):
+def parse_gff(genome):
+	# we need to make a dictionary
+    # key = gene name, value = dictionary
+    # gene name/ exon#/ exon sequence
     coding_seqs = defaultdict(dict)
+	# opening and reading GFF file
     with open(args.gff_file, 'r') as gff:
         reader = csv.reader(gff, delimiter='\t')
         for line in reader:
@@ -94,32 +76,42 @@ def parse_gff(args, genome):
                     frame=line[7]
                     attribute=line[8]
 
-        # reverse complement the feature if necessary
+        	# create the sequence for each feature
+		    feature_sequence = genome[start:end]
+		# reverse complement the feature if necessary and OVERWRITE
+                    if(strand == '-'):
+                        feature_sequence = rev_comp(feature_sequence)
 
-        if(feature == 'CDS'):
-            # split the attributes field into its separate parts, to get the gene info
-            exon_info = attributes.split(':')
+                    # calculate GC of feature
+                    gc_content = gc(feature_sequence)
+        	    if(feature == 'CDS'):
+            		# split the attributes field into its separate parts, to get the gene info
+            		exon_info = attribute.split(':')
 
-            print(exon_info)
+            		print(exon_info)
 	
-            # extract the gene_name
-            gene_name = fields[0].split()[1]
+            		# extract the gene_name
+            		gene_name = fields[0].split()[1]
 	
-            if len(exon_info[0].split()) >2:
-                # extract the exon number
-                exon_number = exon_info[0].split()[-1]
-                #print(gene_name, exon_number)
+            		if len(exon_info[0].split()) >2:
+                		# extract the exon number
+                		exon_number = exon_info[0].split()[-1]
+                		#print(gene_name, exon_number)
 
-                if gene_name in coding_seqs:
-                    # store the coding sequence for this exon
-                else:
-                    # first time encountering this gene, so declare the dictionary for it
-                    coding_seqs[gene_name] = {}
+                		if gene_name in coding_seqs:
+                    			# store the coding sequence for this exon
+					coding_seqs[gene_name][exon_number] = feature_sequences
+				else:
+                    			# first time encountering this gene, so declare the dictionary for it
+                    			coding_seqs[gene_name] = {}
 
-                    # store the coding sequence for this exon
-                    coding_seqs[gene_name][exon_number] = feature_sequence
-            else:
-                continue
+                    			# store the coding sequence for this exon
+                    			coding_seqs[gene_name][exon_number] = feature_sequence
+            		else:
+                		#continue
+				# print the sequence in FASTA format
+				print('>' + line[0].replace('','_') + '_' + gene_name)
+				print(feature_sequence)
 
     # done reading GFF file, loop over coding_seqs to print the CDS sequences
     for gene, exons in coding_seqs.items():
@@ -127,31 +119,26 @@ def parse_gff(args, genome):
         # make a variable that will hold the concatenated sequences
         cds_for_this_gene =''
         # print the FASTA header for this gene ( si that it prints citrullus lanatus and then gene)
-        print('>' + gene.replace('_', '_') + '_' + gene)
+        print('>' + line[0].replace('_', '_') + '_' + gene)
         for exon_num, exon_seq in sorted(exons.items()):
             cds += exon_seq
-            print(exon_seq, end='')
-		
-		
+        print(exon_seq, end='')
+	
+def rev_comp(seq): # much more simplified reverse complement than before
+    return seq.reverse_complement()
 
-            # test whether there is or isn't an entry in index 2, which holds the value 'exon'
-            # for genes that have introns. If there is no value to index 2, then the gene doesn't
-            # have an intron, and we can just print it
-          #  if len(fields[0].split()[2]) > 2:
-           #     print('This gene has an intron')
-          #  else:
-           #     print('>' + line[0].replace('_', '_') + '_' + gene_name)
-            #    print(feature_sequence)  
-
+def gc(seq): # much more simplified GC content than before
+    seq = seq.upper()
+    count_of_G = seq.count('G')
+    count_of_C = seq.count('C')
+    return (count_of_G + count_of_C) / len(seq)		
 
 def main():
+	genome = read_fasta()
+	parse_gff(genome)
+
 # get arguments before calling main
 	args = get_args()
-	genome = read_fasta(args)
-	gff,exon = read_gff(args, genome)
-	gc_content = gc_calc(args, genome)
-	rev=rev_comp(args, genome)
-
 # execute by calling main
 if __name__=="__main__":
         main()
