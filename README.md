@@ -24,12 +24,10 @@
 #### Chapter 9 - Completed [on GitHub]
 #
 ### From Jupyter Notebook - In class work
-#### nucleotide_composition.py
-#### reading_and_writing.ipynb [3/25/2019]
-#### 3-27_lists.ipynb [3/27/2019]
-#### write_trestles_PBS.py [4/03/2019]
-#### csvreader.py [4/10/2019]
-#### seqIO.py
-#### fib_with_functions.py [4/15/2019]
-#### telemetry.py [4/17/2019]
-#### regex.ipynb [4/22/2019]
+#### [3/25/2019] - reading_and_writing.ipynb 
+#### [3/27/2019] - 3-27_lists.ipynb 
+#### [4/03/2019] - write_trestles_PBS.ipynb 
+#### [4/10/2019] - csvreader.ipynb (lines from seqIO.ipynb included in csv)
+#### [4/15/2019] - fib_with_functions.ipynb 
+#### [4/17/2019] - telemetry.ipynb 
+#### [4/22/2019] - regex.ipynb 
