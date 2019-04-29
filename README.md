@@ -22,7 +22,7 @@
 #### Chapter 7 - Completed [on GitHub]
 #### Chapter 8 - Completed [on GitHub]
 #### Chapter 9 - Completed [on GitHub]
-
+#
 ### From Jupyter Notebook - In class work
 #### nucleotide_composition.py
 #### reading_and_writing.ipynb [3/25/2019]
