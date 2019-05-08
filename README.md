@@ -31,3 +31,6 @@
 #### [4/15/2019] - fib_with_functions.ipynb 
 #### [4/17/2019] - telemetry.ipynb 
 #### [4/22/2019] - regex.ipynb 
+
+
+#### [5/8/2019] - final_script (used for final project)
